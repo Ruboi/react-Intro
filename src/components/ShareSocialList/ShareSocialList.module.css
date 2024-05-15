@@ -1,0 +1,19 @@
+.listLinks {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.listLinks  li {
+    list-style: none;
+    padding: 20px 10px;
+}
+
+.listLinks a{
+    transition: transform 250ms;
+    display: block;
+}
+
+.listLinks a:hover {
+    transform: translateY(-2px);
+}
