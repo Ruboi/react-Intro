@@ -1,5 +1,5 @@
 import SocialLinks from "../SocialLinks";
-import constLinks from "../../moduleJS/constLinks";
+import globalLinks from "../../moduleJS/constLinks";
 
 import {
   faFacebook,
@@ -8,11 +8,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const ShareSocialList = () => {
-
-
   return (
     <div>
-      <SocialLinks links={constLinks} />
+      <SocialLinks links={globalLinks} />
     </div>
   );
 };

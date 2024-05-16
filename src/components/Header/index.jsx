@@ -1,6 +1,6 @@
 import userIcon from "./user.png";
 import logo from "./logo.png";
-import styles from  './Header.module.css'
+import styles from "./Header.module.css";
 import ShareSocialList from "../ShareSocial";
 
 function Header(props) {
@@ -19,11 +19,8 @@ function Header(props) {
 
   //   return <header>{isLogin && <img src={userIcon} alt="user" />}</header>;
 
-
-  console.log('styles', styles)
-
   const buttons = (
-    <div className='buttons'>
+    <div className="buttons">
       <button>Login</button>
       <button>Registration</button>
     </div>
@@ -34,7 +31,7 @@ function Header(props) {
       <img className={styles.logo} src={logo} alt="logo" />
       <ShareSocialList />
       {isLogin ? (
-        <img className={styles['user-icon']} src={userIcon} alt="user" />
+        <img className={styles["user-icon"]} src={userIcon} alt="user" />
       ) : (
         buttons
       )}
